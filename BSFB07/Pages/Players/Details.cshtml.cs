@@ -19,11 +19,17 @@ namespace BSFB07.Pages_Players
             _context = context;
         }
 
+        [BindProperty]
         public Player Player { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
+            {
+                return NotFound();
+            }
+
+            if (id == null || _context.Player == null)
             {
                 return NotFound();
             }
