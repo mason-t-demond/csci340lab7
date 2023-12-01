@@ -28,7 +28,7 @@ namespace BSFB07.Pages_Players
                 return NotFound();
             }
 
-            var player = await _context.Player.FirstOrDefaultAsync(m => m.ID == id);
+            var player = await _context.Player.FirstOrDefaultAsync(m => m.Id == id);
             if (player == null)
             {
                 return NotFound();

@@ -26,22 +26,22 @@
                 @Html.DisplayNameFor(model => model.Player[0].primarySpePos)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].running)
+                @Html.DisplayNameFor(model => model.Player[0].Running)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].passing)
+                @Html.DisplayNameFor(model => model.Player[0].Passing)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].catching)
+                @Html.DisplayNameFor(model => model.Player[0].Catching)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].kicking)
+                @Html.DisplayNameFor(model => model.Player[0].Kicking)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].blocking)
+                @Html.DisplayNameFor(model => model.Player[0].Blocking)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Player[0].ovr)
+                @Html.DisplayNameFor(model => model.Player[0].Ovr)
             </th>
             <th></th>
         </tr>
@@ -62,27 +62,27 @@
                 @Html.DisplayFor(modelItem => item.primarySpePos)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.running)
+                @Html.DisplayFor(modelItem => item.Running)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.passing)
+                @Html.DisplayFor(modelItem => item.Passing)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.catching)
+                @Html.DisplayFor(modelItem => item.Catching)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.kicking)
+                @Html.DisplayFor(modelItem => item.Kicking)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.blocking)
+                @Html.DisplayFor(modelItem => item.Blocking)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ovr)
+                @Html.DisplayFor(modelItem => item.Ovr)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

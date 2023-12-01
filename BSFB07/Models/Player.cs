@@ -3,46 +3,43 @@ using System.ComponentModel.DataAnnotations;
 namespace BSFB07.Models;
 
 public class Player {
-    public enum OffPosition {
-        QB, RB, WR, C
-    }
-    public enum DefPosition {
-        DL, LB, CB, S
-    }
-    public enum SpePosition {
-        K, 
-    }
-    
     [Key]
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     [Required]
     [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
     [StringLength(20)]
     public string? name { get; set; }
 
-    public OffPosition primaryOffPos { get; set; }
+    [Display(Name = "Offensive Position")]
+    [StringLength(2)]
+    public string? primaryOffPos { get; set; }
 
-    public DefPosition primaryDefPos { get; set; }
+    [Display(Name = "Defensive Position")]
+    [StringLength(2)]
+    public string? primaryDefPos { get; set; }
     
-    public SpePosition primarySpePos { get; set; }
+    [Display(Name = "Special Teams Position")]
+    [StringLength(2)]
+    public string? primarySpePos { get; set; }
     
     [Range(1, 10)]
-    public int running { get; set; }
+    public int Running { get; set; }
 
     [Range(1, 10)]
-    public int passing { get; set; }
+    public int Passing { get; set; }
 
     [Range(1, 10)]
-    public int catching { get; set; }
+    public int Catching { get; set; }
 
     [Range(1, 10)]
-    public int kicking { get; set; }
+    public int Kicking { get; set; }
 
     [Range(1, 10)]
-    public int blocking { get; set; }
+    public int Blocking { get; set; }
 
-    [Range(1, 10)]
-    public int ovr { get; set; }
+    [Display(Name = "Overall")]
+    [Range(1, 100)]
+    public int Ovr { get; set; }
 
 }

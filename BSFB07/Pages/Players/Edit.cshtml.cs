@@ -30,7 +30,7 @@ namespace BSFB07.Pages_Players
                 return NotFound();
             }
 
-            var player =  await _context.Player.FirstOrDefaultAsync(m => m.ID == id);
+            var player =  await _context.Player.FirstOrDefaultAsync(m => m.Id == id);
             if (player == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace BSFB07.Pages_Players
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PlayerExists(Player.ID))
+                if (!PlayerExists(Player.Id))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace BSFB07.Pages_Players
 
         private bool PlayerExists(int id)
         {
-            return _context.Player.Any(e => e.ID == id);
+            return _context.Player.Any(e => e.Id == id);
         }
     }
 }

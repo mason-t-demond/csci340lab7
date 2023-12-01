@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj": {}
+    "c:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj": {
+    "c:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj",
+        "projectUniqueName": "c:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj",
         "projectName": "BSFB07",
-        "projectPath": "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj",
+        "projectPath": "c:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\BSFB07.csproj",
         "packagesPath": "C:\\Users\\MrMcQuinn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\obj\\",
+        "outputPath": "c:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\BSFB07\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrMcQuinn\\AppData\\Roaming\\NuGet\\NuGet.Config",
