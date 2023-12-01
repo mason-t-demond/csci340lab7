@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TwWb5Cbst/hKRvHvIBkaxWlBA9teEvnChYYi9a/+zLaHWo2xZivHS5qvSMs4YSFVg2i0PVFuoEp0bPPbsFr8zw==",
+  "dgSpecHash": "gL7gL2aFDWSoWNQ6PRxk1CieROucbWq7NyJopll/zE1f+D6qctr4SZiHfroT5kU1MKFoo8YGigMqNnBNebIOOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MrMcQuinn\\Documents\\School\\Comp Sci\\340\\csci340lab7\\RazorPagesMovie\\RazorPagesMovie.csproj",
   "expectedPackageFiles": [
@@ -232,7 +232,11 @@
     "C:\\Users\\MrMcQuinn\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\MrMcQuinn\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\MrMcQuinn\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\MrMcQuinn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
