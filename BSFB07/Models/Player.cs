@@ -12,34 +12,37 @@ public class Player {
     public enum SpePosition {
         K, 
     }
+    
+    [Key]
+    public int ID { get; set; }
 
     [Required]
     [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
     [StringLength(20)]
-    public string? name;
+    public string? name { get; set; }
 
-    public OffPosition primaryOffPos;
+    public OffPosition primaryOffPos { get; set; }
 
-    public DefPosition primaryDefPos;
+    public DefPosition primaryDefPos { get; set; }
     
-    public SpePosition primarySpePos;
+    public SpePosition primarySpePos { get; set; }
     
     [Range(1, 10)]
-    public int running;
+    public int running { get; set; }
 
     [Range(1, 10)]
-    public int passing;
+    public int passing { get; set; }
 
     [Range(1, 10)]
-    public int catching;
+    public int catching { get; set; }
 
     [Range(1, 10)]
-    public int kicking;
+    public int kicking { get; set; }
 
     [Range(1, 10)]
-    public int blocking;
+    public int blocking { get; set; }
 
     [Range(1, 10)]
-    public int ovr;
+    public int ovr { get; set; }
 
 }

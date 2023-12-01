@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BSFB07.props" />
+</Project>

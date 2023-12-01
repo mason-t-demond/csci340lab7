@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using BSFB07.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<BSFB07Context>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("BSFB07Context") ?? throw new InvalidOperationException("Connection string 'BSFB07Context' not found.")));
 
 var app = builder.Build();
 

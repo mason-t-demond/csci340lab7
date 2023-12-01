@@ -1,0 +1,79 @@
+@page
+@model BSFB07.Pages_Players.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Player</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primaryOffPos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primaryOffPos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primaryDefPos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primaryDefPos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primarySpePos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primarySpePos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.running)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.running)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.passing)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.passing)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.catching)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.catching)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.kicking)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.kicking)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.blocking)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.blocking)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.ovr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.ovr)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Player.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
