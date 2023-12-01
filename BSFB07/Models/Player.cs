@@ -23,21 +23,27 @@ public class Player {
     [StringLength(2)]
     public string? primarySpePos { get; set; }
     
+    [Required]
     [Range(1, 10)]
     public int Running { get; set; }
 
+    [Required]
     [Range(1, 10)]
     public int Passing { get; set; }
 
+    [Required]
     [Range(1, 10)]
     public int Catching { get; set; }
 
+    [Required]
     [Range(1, 10)]
     public int Kicking { get; set; }
 
+    [Required]
     [Range(1, 10)]
     public int Blocking { get; set; }
 
+    [Required]
     [Display(Name = "Overall")]
     [Range(1, 100)]
     public int Ovr { get; set; }

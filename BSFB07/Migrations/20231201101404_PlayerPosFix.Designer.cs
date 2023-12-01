@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BSFB07.Migrations
 {
     [DbContext(typeof(BSFB07Context))]
-    [Migration("20231201100626_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20231201101404_PlayerPosFix")]
+    partial class PlayerPosFix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
