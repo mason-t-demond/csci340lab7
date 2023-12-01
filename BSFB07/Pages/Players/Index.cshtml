@@ -1,0 +1,90 @@
+@page
+@model BSFB07.Pages_Players.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].primaryOffPos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].primaryDefPos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].primarySpePos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Running)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Passing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Catching)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Kicking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Blocking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Ovr)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Player) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.primaryOffPos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.primaryDefPos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.primarySpePos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Running)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passing)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Catching)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kicking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blocking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ovr)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

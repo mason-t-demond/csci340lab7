@@ -1,0 +1,82 @@
+@page
+@model BSFB07.Pages_Players.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Player</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primaryOffPos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primaryOffPos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primaryDefPos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primaryDefPos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.primarySpePos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.primarySpePos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Running)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Running)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Passing)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Passing)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Catching)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Catching)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Kicking)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Kicking)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Blocking)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Blocking)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Player.Ovr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Player.Ovr)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Player.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -3,43 +3,43 @@ using System.ComponentModel.DataAnnotations;
 namespace BSFB07.Models;
 
 public class Player {
-    public enum OffPosition {
-        QB, RB, WR, C
-    }
-    public enum DefPosition {
-        DL, LB, CB, S
-    }
-    public enum SpePosition {
-        K, 
-    }
+    [Key]
+    public int Id { get; set; }
 
     [Required]
     [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
     [StringLength(20)]
-    public string? name;
+    public string? name { get; set; }
 
-    public OffPosition primaryOffPos;
+    [Display(Name = "Offensive Position")]
+    [StringLength(2)]
+    public string? primaryOffPos { get; set; }
 
-    public DefPosition primaryDefPos;
+    [Display(Name = "Defensive Position")]
+    [StringLength(2)]
+    public string? primaryDefPos { get; set; }
     
-    public SpePosition primarySpePos;
+    [Display(Name = "Special Teams Position")]
+    [StringLength(2)]
+    public string? primarySpePos { get; set; }
     
     [Range(1, 10)]
-    public int running;
+    public int Running { get; set; }
 
     [Range(1, 10)]
-    public int passing;
+    public int Passing { get; set; }
 
     [Range(1, 10)]
-    public int catching;
+    public int Catching { get; set; }
 
     [Range(1, 10)]
-    public int kicking;
+    public int Kicking { get; set; }
 
     [Range(1, 10)]
-    public int blocking;
+    public int Blocking { get; set; }
 
-    [Range(1, 10)]
-    public int ovr;
+    [Display(Name = "Overall")]
+    [Range(1, 100)]
+    public int Ovr { get; set; }
 
 }
