@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using BSFB07.Data;
 using BSFB07.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BSFB07.Pages_Players
 {
@@ -21,9 +22,37 @@ namespace BSFB07.Pages_Players
 
         public IList<Player> Player { get;set; } = default!;
 
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString { get; set; }
+
+        public SelectList? Positions { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? PlayerPosition { get; set; }
+
         public async Task OnGetAsync()
         {
-            Player = await _context.Player.ToListAsync();
+            // Use LINQ to get list of genres.
+            IQueryable<string> PosQuery = from p in _context.Player
+                                          orderby p.primaryOffPos
+                                          select p.primaryOffPos;
+            
+            
+            var players = from p in _context.Player
+                        select p;
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                players = players.Where(s => s.name.Contains(SearchString));
+            }
+
+            if (!string.IsNullOrEmpty(PlayerPosition))
+            {
+                players = players.Where(x => x.primaryOffPos == PlayerPosition || x.primaryDefPos == PlayerPosition || x.primarySpePos == PlayerPosition);
+            }
+            
+            Positions = new SelectList(await PosQuery.Distinct().ToListAsync());
+            Player = await players.ToListAsync();
         }
     }
 }

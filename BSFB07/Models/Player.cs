@@ -9,7 +9,7 @@ public class Player {
     [Required]
     [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
     [StringLength(20)]
-    public string? name { get; set; }
+    public required string name { get; set; }
 
     [Display(Name = "Offensive Position")]
     [StringLength(2)]
